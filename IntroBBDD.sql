@@ -30,7 +30,7 @@ SELECT * FROM bookings WHERE total_amount > 1000000;
 -- de los modelos de aviones disponibles (aircraft_data o aircrafts_data).
 -- -----------------------------------------------------------------------------
 
-
+SELECT * FROM aircraft_data;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 4
@@ -39,13 +39,16 @@ SELECT * FROM bookings WHERE total_amount > 1000000;
 -- Boeing 737. (Código Modelo Avión = 733).
 -- -----------------------------------------------------------------------------
 
-
+SELECT flight_id FROM flights WHERE aircraft_code = '733';
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 5
 -- Enunciado: Escribe una consulta que te muestre la información detallada de 
 -- los tickets que han comprado las personas que se llaman Irina.
 -- -----------------------------------------------------------------------------
+
+SELECT * FROM tickets WHERE passenger_name LIKE '%IRINA%'
+
 
 -- =============================================================================
 -- EJERCICIOS OPCIONALES (PRÁCTICA ADICIONAL)
