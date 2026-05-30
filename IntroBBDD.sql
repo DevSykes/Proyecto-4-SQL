@@ -13,7 +13,7 @@
 -- identificador que figuren con status 'On Time'.
 -- -----------------------------------------------------------------------------
 
-
+SELECT flight_id FROM flights  WHERE status = 'On Time'
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 2
