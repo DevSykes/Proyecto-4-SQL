@@ -13,7 +13,7 @@
 -- identificador que figuren con status 'On Time'.
 -- -----------------------------------------------------------------------------
 
-SELECT flight_id FROM flights  WHERE status = 'On Time'
+SELECT flight_id FROM flights  WHERE status = 'On Time';
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 2
@@ -22,7 +22,7 @@ SELECT flight_id FROM flights  WHERE status = 'On Time'
 -- mayor a 1.000.000 unidades monetarias (Rublos).
 -- -----------------------------------------------------------------------------
 
-
+SELECT * FROM bookings WHERE total_amount > 1000000;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 3
