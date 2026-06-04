@@ -73,7 +73,7 @@ SELECT aircraft_code, COUNT(*) FROM flights GROUP BY aircraft_code;
 -- Enunciado: Reservas con más de un billete (varios pasajeros).
 -- -----------------------------------------------------------------------------
 
-
+SELECT book_ref, COUNT(*) FROM tickets GROUP BY book_ref HAVING COUNT(*) > 1;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 9
