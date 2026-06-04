@@ -59,7 +59,7 @@ SELECT * FROM tickets WHERE passenger_name LIKE '%IRINA%'
 -- Enunciado: Mostrar las ciudades con más de un aeropuerto.
 -- -----------------------------------------------------------------------------
 
-
+SELECT city FROM Airports GROUP BY city HAVING COUNT(*) > 1;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 7
