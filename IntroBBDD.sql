@@ -1,19 +1,10 @@
--- =============================================================================
--- PROYECTO 4: SQL - EXTRACCIÓN DE DATOS Y OPERACIONES DE LECTURA
--- Base de Datos: Bookings Demo DB (PostgreSQL)
--- =============================================================================
-
--- =============================================================================
--- EJERCICIOS OBLIGATORIOS
--- =============================================================================
-
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 1
 -- Enunciado: Escribe una consulta que recupere los Vuelos (flights) y su 
 -- identificador que figuren con status 'On Time'.
 -- -----------------------------------------------------------------------------
 
-SELECT flight_id FROM flights  WHERE status = 'On Time';
+SELECT flight_id, flight_no FROM flights WHERE status = 'On Time';
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 2
@@ -30,7 +21,7 @@ SELECT * FROM bookings WHERE total_amount > 1000000;
 -- de los modelos de aviones disponibles (aircraft_data o aircrafts_data).
 -- -----------------------------------------------------------------------------
 
-SELECT * FROM aircraft_data;
+SELECT * FROM aircrafts_data;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 4
@@ -47,14 +38,14 @@ SELECT flight_id FROM flights WHERE aircraft_code = '733';
 -- los tickets que han comprado las personas que se llaman Irina.
 -- -----------------------------------------------------------------------------
 
-SELECT * FROM tickets WHERE passenger_name LIKE '%IRINA%'
+SELECT * FROM tickets WHERE passenger_name LIKE 'IRINA%';
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 6
 -- Enunciado: Mostrar las ciudades con más de un aeropuerto.
 -- -----------------------------------------------------------------------------
 
-SELECT city FROM Airports GROUP BY city HAVING COUNT(*) > 1;
+SELECT city FROM airports_data GROUP BY city HAVING COUNT(*) > 1;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 7
