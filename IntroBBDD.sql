@@ -66,7 +66,7 @@ SELECT city FROM Airports GROUP BY city HAVING COUNT(*) > 1;
 -- Enunciado: Mostrar el número de vuelos por modelo de avión.
 -- -----------------------------------------------------------------------------
 
-
+SELECT aircraft_code, COUNT(*) FROM flights GROUP BY aircraft_code;
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 8
