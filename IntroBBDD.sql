@@ -80,4 +80,4 @@ SELECT book_ref, COUNT(*) FROM tickets GROUP BY book_ref HAVING COUNT(*) > 1;
 -- Enunciado: Vuelos con retraso de salida superior a una hora.
 -- -----------------------------------------------------------------------------
 
-
+SELECT flight_id FROM flights WHERE actual_departure > scheduled_departure + INTERVAL '1 hour';
