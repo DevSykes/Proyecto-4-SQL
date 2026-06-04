@@ -49,11 +49,6 @@ SELECT flight_id FROM flights WHERE aircraft_code = '733';
 
 SELECT * FROM tickets WHERE passenger_name LIKE '%IRINA%'
 
-
--- =============================================================================
--- EJERCICIOS OPCIONALES (PRÁCTICA ADICIONAL)
--- =============================================================================
-
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 6
 -- Enunciado: Mostrar las ciudades con más de un aeropuerto.
