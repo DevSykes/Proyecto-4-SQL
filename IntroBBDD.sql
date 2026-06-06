@@ -38,7 +38,7 @@ SELECT flight_id FROM flights WHERE aircraft_code = '733';
 -- los tickets que han comprado las personas que se llaman Irina.
 -- -----------------------------------------------------------------------------
 
-SELECT * FROM tickets WHERE passenger_name LIKE 'IRINA%';
+SELECT * FROM tickets WHERE passenger_name LIKE '%IRINA%';
 
 -- -----------------------------------------------------------------------------
 -- EJERCICIO 6
